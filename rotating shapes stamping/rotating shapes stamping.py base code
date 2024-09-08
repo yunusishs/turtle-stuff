@@ -1,0 +1,22 @@
+#all the parameters are shape, red, green, blue, and turn
+from turtle import *
+
+'''
+chosen_shape is in ['classic', 'arrow', 'circle', 'turtle', 'triangle', 'square'] or you can register your own shape
+'''
+colormode(255)
+shape(chosen_shape)
+speed(0)
+'''
+red is in [i, 255-i] or red is in list(range(256))
+green is in [i, 255-i] or green is in list(range(256))
+blue is in [i, 255-i] or blue is in list(range(256))
+'''
+'''
+turn is in list(range(256))
+'''
+for i in range(256):
+    color(red, green, blue)
+    shapesize((256-i)/8)
+    right(turn)
+    stamp()
